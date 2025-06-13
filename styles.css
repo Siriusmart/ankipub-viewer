@@ -3,6 +3,8 @@
 body {
   font-family: "Open Sans";
   user-select: none;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .copy {
@@ -30,6 +32,11 @@ body {
   bottom: 0;
   right: 0;
   padding: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#footer a {
   color: blue;
 }
 
@@ -103,7 +110,20 @@ body {
 
 /* packages */
 
-@media (min-width: 800px) {
+#packages #donation-home {
+  text-align: center;
+  border: 2px dashed #f69c55;
+  align-content: center;
+  padding-left: 5em;
+  padding-right: 5em;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+}
+
+@media (min-width: 900px) {
   #packages {
     position: absolute;
     top: 50%;
@@ -213,6 +233,16 @@ body {
 
 #decks .subdecks .cards {
   float: right;
+  width: 70px;
+  text-align: right;
+  background-color: inherit;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  #decks .subdecks .cards {
+    display: none;
+  }
 }
 
 #decks ul {
@@ -296,7 +326,7 @@ body {
   padding-left: 1em;
   padding-right: 1em;
   border-radius: 1.25em;
-  display: inline;
+  display: inline-block;
   cursor: pointer;
 }
 
