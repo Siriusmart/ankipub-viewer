@@ -1,1 +1,0 @@
-<ul><li>As items are added and deleted from the queue,&nbsp;<u>space created at front</u>&nbsp;that cannot be filled.</li><li>Items can only be added until the rear pointer points to the last element of the data structure.</li></ul>

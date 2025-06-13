@@ -1,1 +1,0 @@
-<ul><li>The loop is perform&nbsp;\(n\)&nbsp;times for a list of length&nbsp;\(n\)</li><li>The basic operation in the loop is the&nbsp;<code>IF</code> statement</li><li>Giving a total&nbsp;\(n\)&nbsp;steps in the algorithm</li></ul>Therefore the time complexity of the linear search is&nbsp;\(O(n)\)<br>

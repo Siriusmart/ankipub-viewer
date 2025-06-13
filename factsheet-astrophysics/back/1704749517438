@@ -1,1 +1,0 @@
-<ul><li>isEmpty()</li><li>append(item)</li><li>remove(item)</li><li>search(item)</li><li>length()</li><li>index(item)</li><li>insert(pos,item)</li><li>pop()</li><li>pop(pos)</li></ul>

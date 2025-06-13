@@ -1,1 +1,0 @@
-The finite state machine produces a Yes or No answer to the question: does the input sequence move from the start to the accepted state by any of the possible paths.

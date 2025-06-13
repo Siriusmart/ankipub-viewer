@@ -1,1 +1,0 @@
-<ul><li>Each row and column represents a node.</li><li>Value stored at the intersection of row i, column j indicates there is an edge connecting node i and node j.</li></ul>

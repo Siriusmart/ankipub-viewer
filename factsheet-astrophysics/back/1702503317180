@@ -1,4 +1,0 @@
-<pre>REPEAT
-   (statements to do)
-UNTIL anotherGo = "no"
-</pre>

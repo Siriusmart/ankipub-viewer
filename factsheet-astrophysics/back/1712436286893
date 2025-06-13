@@ -1,1 +1,0 @@
-The if statement inside the inner loop is performed&nbsp;\((n-1)+(n-2)+\dots+1\)&nbsp;times.<br><br>Which is equal to&nbsp;\(\frac{1}{2}n^2-\frac{1}{2}n\), since it is a&nbsp;<b>quadratic function</b>, ignore the coefficient and less dominant term is&nbsp;\(O(n^2)\).&nbsp;

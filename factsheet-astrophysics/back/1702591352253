@@ -1,1 +1,0 @@
-Local variables can be used and exist&nbsp;<u>only during the execution of the subroutine</u>. They cannot be accessed outside the subroutine, and changing them have <b>no effect on any variable outside the subroutine</b>.

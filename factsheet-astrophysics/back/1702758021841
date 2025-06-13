@@ -1,6 +1,0 @@
-<pre>TRY
-  OPEN file for reading
-EXCEPT
-  OUTPUT "Cannot find this file"
-ENDEXCEPT
-</pre>

@@ -1,1 +1,0 @@
-<div>A binary search can be performed on a&nbsp;<u>sorted list</u>.</div><ol><li>Look at the middle item of the list, if it is the item being sought, stop searching.</li><li>If the middle item is greater than the one being saught, look in the first half and discard the second half, vice versa.</li><li>Repeat with the new list until the item is found.</li></ol>

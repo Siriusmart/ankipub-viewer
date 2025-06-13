@@ -1,1 +1,0 @@
-<ul><li>All items&nbsp;<u>move up one space</u>&nbsp;when an item leaves the queue so that the front element of the structure is always the first element.</li><li>With pointer to the <b>front</b> and&nbsp;<b>rear</b>&nbsp;of the structure.</li></ul>

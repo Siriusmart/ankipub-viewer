@@ -1,1 +1,0 @@
-<ul><li>A&nbsp;<b>base case</b>.</li><li>For input values other than the base case, the subroutine must call itself.</li><li>The base case must be reached after a&nbsp;<i>finite number of calls</i>.</li></ul>

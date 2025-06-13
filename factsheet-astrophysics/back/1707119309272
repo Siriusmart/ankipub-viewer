@@ -1,1 +1,0 @@
-An edge connects two nodes, every node&nbsp;<i>except the root node</i>&nbsp;is&nbsp;<u>connected by exactly one edge</u>&nbsp;from another node in the level above it.

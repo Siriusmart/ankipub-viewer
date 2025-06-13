@@ -1,1 +1,0 @@
-The&nbsp;<i>address of the parameter</i>&nbsp;- not its value is passed, so any change made to it in a subroutine will be reflected in the calling program.
