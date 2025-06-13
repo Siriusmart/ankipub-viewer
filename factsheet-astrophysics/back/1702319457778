@@ -1,0 +1,6 @@
+<pre>strtodate(str)
+
+date1 ← strtodate("18/01/2015")
+date2 ← strtodate("30/12/2014")
+days ← date1 - date2 # 19
+</pre>

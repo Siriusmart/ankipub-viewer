@@ -1,0 +1,11 @@
+<pre>SUB dfs(graph, currentVertex, visited)
+    append currentVertex to list of visited nodes
+    
+    FOR vertex in graph[currentVertex] # neighbours of currentVertex
+        IF vertex NOT IN visited THEN
+            dfs(graph, vertex, visited)
+        ENDIF
+    ENDFOR
+    
+    RETURN visited
+ENDSUB</pre>

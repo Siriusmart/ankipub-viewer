@@ -1,0 +1,9 @@
+<pre>CASE choice of
+    1: OUTPUT "You chose 1"
+       (more statements to do)
+    2: OUTPUT "You chose 2"
+       (more statements to do)
+ELSE
+    OUTPUT "None of that"
+ENDCASE
+</pre>

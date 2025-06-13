@@ -1,0 +1,1 @@
+Each time a subroutine is called, the return address, parameters and local variables used in the subroutine are held in a&nbsp;<b>stack frame</b>&nbsp;in the call stack.

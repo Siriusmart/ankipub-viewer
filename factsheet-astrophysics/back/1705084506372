@@ -1,0 +1,1 @@
+Every puzzle has an&nbsp;<u>input</u>, which define an&nbsp;<u>instance of the puzzle</u>.<br><ul><li>And instance can be either&nbsp;<b>specific</b>&nbsp;(e.g. fill a 3x3 magic square)</li><li>Or&nbsp;<b>general</b>&nbsp;(an n x n square)</li></ul>

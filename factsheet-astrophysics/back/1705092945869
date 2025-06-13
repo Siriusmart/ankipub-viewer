@@ -1,0 +1,1 @@
+<div><ul><li><u>Breaking down a problem</u> into&nbsp;<b>major tasks</b>&nbsp;to be performed.</li><li>Breaking each of these tasks into separate&nbsp;<i>subtasks</i>.</li><li>Repeat until each subtask is sufficiently simple to be written as a self contained&nbsp;<b>module</b>/subroutine.</li></ul></div>

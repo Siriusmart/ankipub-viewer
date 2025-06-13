@@ -1,0 +1,6 @@
+<pre>date(year, month, day)
+
+date1 ← date(2015, 1, 18)
+date2 ← date(2014, 12, 30)
+days ← date1 - date2 # 19
+</pre>

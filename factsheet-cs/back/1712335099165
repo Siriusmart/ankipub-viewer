@@ -1,0 +1,1 @@
+<ul><li>The machine can only be in&nbsp;<u>one state at a time</u>.</li><li>It can&nbsp;<b>transition</b>&nbsp;from one state to another in response to an event or condition.</li><li>The finite state machine is&nbsp;<u>defined by a list of its states and condition</u>&nbsp;for each transition.</li></ul>

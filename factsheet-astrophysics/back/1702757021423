@@ -1,0 +1,8 @@
+<pre>Student = Record
+    integer ID
+    string Firstname
+    string Surname
+    date DateOfBirth
+    string Class
+End Record
+</pre>

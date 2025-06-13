@@ -1,0 +1,1 @@
+<ul><li>Trying to read a&nbsp;<b>non-existent file</b>.</li><li>Trying to&nbsp;<u>convert non-numeric string</u>&nbsp;into an int or real.</li><li>Trying to perform calculations on&nbsp;<u>non-numeric variables</u>.</li><li>Division by 0.</li></ul>

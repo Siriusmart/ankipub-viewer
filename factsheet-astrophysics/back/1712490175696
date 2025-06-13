@@ -1,0 +1,12 @@
+<pre>WHILE queue is NOT empty
+    dequeue vertex u from queue
+    
+    FOR each unvisited neighbour w of the current vertex u
+        newDistance ⬅ displaceAtU + distanceFromUtoW
+        
+        IF newDistance &lt; distanceAtW THEN
+            distanceAtW ⬅ newDistance
+            change position of w in priority queue to reflect new distance to w
+        ENDIF
+    ENDFOR
+ENDWHILE</pre>

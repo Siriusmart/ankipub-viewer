@@ -1,0 +1,1 @@
+<ul><li>A list of all the nodes created.</li><li>Each node points to a list of <b>adjacent nodes</b>&nbsp;to which it is directly linked.</li></ul>

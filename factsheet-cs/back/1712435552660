@@ -1,0 +1,1 @@
+<ol><li><b>Divide</b>&nbsp;the array into 3 parts - middle item, first and second part of the array.</li><li><b>Compare</b>&nbsp;with the middle item<br><ul><li>Equal - nice job</li><li>Greater than - discard the first part</li><li>Less than - discard the second part</li></ul></li><li><b>Repeat</b> until the last item is examined.</li></ol>

@@ -1,0 +1,1 @@
+<ul><li>Another example of divide and conquer, so&nbsp;\(\log n\)</li><li>But there are&nbsp;\(n\)&nbsp;sublists to me merged, so&nbsp;\(n\)</li></ul><div>The time complexity is therefore&nbsp;\(O(n\log n)\)</div>

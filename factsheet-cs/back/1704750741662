@@ -1,0 +1,1 @@
+<ul><li>The stack may contain&nbsp;<i>several return addresses</i>.</li><li>The return addresses are&nbsp;<u>popped when each subroutine is completed</u>.</li></ul>

@@ -1,0 +1,1 @@
+<ol><li>Starting from A, <u>visit all nodes adjacent</u> to A before moving to B.</li><li>Repeat the process for each node at this "level" before moving on to the next one.</li></ol>

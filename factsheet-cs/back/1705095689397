@@ -1,0 +1,1 @@
+<ul><li>The last item in the array will be in the correct place after the&nbsp;<i>first pass</i>.</li><li>n - 1 repeats are needed to sort the entire list.</li></ul>

@@ -1,0 +1,1 @@
+The machine&nbsp;<b>U</b>&nbsp;is essentially an interpreter that reads the description&nbsp;of any Turing machine&nbsp;<b>M</b>, followed by the data&nbsp;<b>D</b>. And executes operations on data precisely as&nbsp;<b>M&nbsp;</b>does.

@@ -1,0 +1,1 @@
+<ol><li>New memory locations is dynamically pulled from the&nbsp;<b>heap</b>.</li><li>The pointers are adjusted to&nbsp;<u>maintain the correct sequence</u>.</li></ol>

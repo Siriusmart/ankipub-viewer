@@ -1,0 +1,6 @@
+<pre>IF (expression) THEN
+    (do these statements)
+ELSE
+    (do these statements)
+ENDIF
+</pre>

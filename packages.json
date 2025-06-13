@@ -1,0 +1,20 @@
+{
+    "factsheet-physics": {
+        "name": "Factsheet Physics",
+        "author": "Sirius",
+        "date": "2025-04-12",
+        "download": "./factsheet-physics.apkg"
+    },
+    "factsheet-cs": {
+        "name": "Factsheet Computing",
+        "author": "Sirius",
+        "date": "2025-06-13",
+        "download": "./factsheet-cs.apkg"
+    },
+    "factsheet-astrophysics": {
+        "name": "Factsheet Astrophysics",
+        "author": "Sirius",
+        "date": "2025-06-13",
+        "download": "./factsheet-asphysics.apkg"
+    }
+}

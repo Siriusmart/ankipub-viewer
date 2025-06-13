@@ -1,0 +1,1 @@
+When parameters are passed by values, changing the parameter inside the subroutine&nbsp;<u>will not affect its value</u>&nbsp;outside the subroutine.

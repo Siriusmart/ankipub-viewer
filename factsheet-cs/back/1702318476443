@@ -1,0 +1,1 @@
+<code>round(value, decimals)<br><br></code>such as<br><code>pi ← round(3.1415, 2) # 3.14</code>

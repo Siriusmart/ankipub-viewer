@@ -1,0 +1,18 @@
+<pre>SUB bfs(graph, vertex)
+    queue ⬅ []
+    visited ⬅ []
+    enqueue vertex
+    
+    WHILE queue NOT empty
+        dequeue item and put in currentNode
+        append current node to visited
+        
+        FOR each neighbour of currentNode
+            IF neighbour NOT IN visited THEN
+                enqueue neighbour
+            ENDIF
+        ENDFOR
+    ENDWHILE
+    
+    RETURN visited
+ENDSUB</pre>
