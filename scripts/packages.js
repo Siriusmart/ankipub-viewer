@@ -1,9 +1,14 @@
 async function packages() {
     const screen = document.getElementById("packages");
     screen.innerHTML = "";
-    const index = await fetchJSON("./packages.json");
+    let index = await fetchJSON("./packages.json");
+
+    document.getElementById("go-home").setAttribute("href", "./");
 
     loaded();
+
+    let packageWrapper = document.createElement("div");
+    packageWrapper.id = "package-wrapper";
 
     for (const id in index) {
         let pack = document.createElement("div");
@@ -45,7 +50,7 @@ async function packages() {
         pack.appendChild(author);
         pack.appendChild(date);
         pack.appendChild(urlWrap);
-        screen.appendChild(pack);
+        packageWrapper.appendChild(pack);
 
         pack.onclick = () => {
             let url = new URL(window.location.href);
@@ -56,4 +61,10 @@ async function packages() {
             window.location.href = url;
         };
     }
+
+    screen.appendChild(packageWrapper);
+
+    let donationHome = document.getElementById("donation-home");
+    screen.appendChild(donationHome);
+    donationHome.removeAttribute("hidden");
 }

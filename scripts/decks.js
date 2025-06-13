@@ -58,6 +58,8 @@ async function decks() {
                     } catch (_e) {}
                 }
 
+                if (isNaN(s)) return Number.MAX_SAFE_INTEGER;
+
                 return val;
             }
 

@@ -5,12 +5,36 @@ body {
   user-select: none;
 }
 
+.copy {
+  user-select: all;
+}
+
+#donation-global {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 10px;
+}
+
 #loading {
   font-size: xx-large;
   font-weight: 500;
   margin: auto;
   text-align: center;
   margin-top: 1em;
+}
+
+#footer {
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 3px;
+  color: blue;
+}
+
+.light #footer {
+  background: #dce0e8;
 }
 
 .light {
@@ -26,6 +50,10 @@ body {
     brightness(98%) contrast(89%);
 }
 
+.dark #footer {
+  background: #11111b;
+}
+
 .dark {
   background: #11111b;
 }
@@ -34,7 +62,71 @@ body {
   color: #cdd6f4;
 }
 
+/* guide */
+
+#guide li {
+  padding: 3px;
+}
+
+#guide a {
+  font-weight: 500;
+}
+
+#guide {
+  max-width: 600px;
+  display: block;
+  margin: auto;
+  margin-top: 5em;
+}
+
+#guide h3:not(:first-of-type) {
+  padding-top: 0.5em;
+}
+
+#donation-home-guide {
+  text-align: center;
+  border: 2px dashed #f69c55;
+  align-content: center;
+  padding-left: 5em;
+  padding-right: 5em;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+}
+
+#donation-home-guide p {
+  text-align: justify;
+  hyphens: auto;
+}
+
 /* packages */
+
+@media (min-width: 800px) {
+  #packages {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    min-width: 800px;
+  }
+
+  #packages #donation-home {
+    text-align: center;
+    margin-left: 2em;
+    border: 2px dashed #f69c55;
+    align-content: center;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  #packages #donation-home p {
+    text-align: justify;
+    hyphens: auto;
+  }
+}
 
 #packages .title {
   font-weight: 700;
@@ -62,7 +154,7 @@ body {
   cursor: pointer;
 }
 
-#packages {
+#packages #package-wrapper {
   text-align: center;
 }
 
@@ -131,7 +223,7 @@ body {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2em;
+  margin-top: 3em;
   margin-bottom: 2em;
   font-size: larger;
 }
@@ -171,7 +263,11 @@ body {
 /* single */
 #single {
   text-align: center;
-  margin: 2em;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #single .qualifier {
@@ -223,6 +319,10 @@ body {
 }
 
 /* browse */
+#browse {
+  margin-top: 4em;
+}
+
 #browse th,
 #browse td {
   max-width: calc(min(30em, 40vw));
