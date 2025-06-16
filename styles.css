@@ -141,11 +141,11 @@ body {
     padding-left: 5em;
     padding-right: 5em;
   }
+}
 
-  #packages #donation-home p {
-    text-align: justify;
-    hyphens: auto;
-  }
+#packages #donation-home p {
+  text-align: justify;
+  hyphens: auto;
 }
 
 #packages .title {
