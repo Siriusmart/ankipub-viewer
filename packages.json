@@ -8,13 +8,13 @@
     "factsheet-cs": {
         "name": "Factsheet Computing",
         "author": "Sirius",
-        "date": "2025-06-13",
+        "date": "2025-06-16",
         "download": "./factsheet-cs.apkg"
     },
     "factsheet-astrophysics": {
         "name": "Factsheet Astrophysics",
         "author": "Sirius",
-        "date": "2025-06-13",
-        "download": "./factsheet-asphysics.apkg"
+        "date": "2025-06-16",
+        "download": "./factsheet-astrophysics.apkg"
     }
 }
