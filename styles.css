@@ -1,550 +1,579 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 body {
-  font-family: "Open Sans";
-  user-select: none;
-  margin-left: 20px;
-  margin-right: 20px;
+    font-family: "Open Sans";
+    user-select: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .copy {
-  user-select: all;
+    user-select: all;
 }
 
 #donation-global {
-  position: fixed;
-  right: 0;
-  top: 0;
-  margin: 10px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 10px;
 }
 
 #loading {
-  font-size: xx-large;
-  font-weight: 500;
-  margin: auto;
-  text-align: center;
-  margin-top: 1em;
+    font-size: xx-large;
+    font-weight: 500;
+    margin: auto;
+    text-align: center;
+    margin-top: 1em;
 }
 
 #footer {
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  padding: 3px;
-  padding-left: 6px;
-  padding-right: 6px;
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 #footer a {
-  color: blue;
+    color: blue;
 }
 
 .light #footer {
-  background: #dce0e8;
+    background: #dce0e8;
 }
 
 .light {
-  background: #dce0e8;
+    background: #dce0e8;
 }
 
 .light #loading {
-  color: #4c4f69;
+    color: #4c4f69;
 }
 
 .light .icon-colour {
-  filter: invert(28%) sepia(36%) saturate(349%) hue-rotate(195deg)
-    brightness(98%) contrast(89%);
+    filter: invert(28%) sepia(36%) saturate(349%) hue-rotate(195deg) brightness(98%) contrast(89%);
 }
 
 .dark #footer {
-  background: #11111b;
+    background: #11111b;
 }
 
 .dark {
-  background: #11111b;
+    background: #11111b;
 }
 
 .dark #loading {
-  color: #cdd6f4;
+    color: #cdd6f4;
 }
 
 /* guide */
 
 #guide li {
-  padding: 3px;
+    padding: 3px;
 }
 
 #guide a {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 #guide {
-  max-width: 600px;
-  display: block;
-  margin: auto;
-  margin-top: 5em;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+    margin-top: 5em;
 }
 
 #guide h3:not(:first-of-type) {
-  padding-top: 0.5em;
+    padding-top: 0.5em;
 }
 
 #donation-home-guide {
-  text-align: center;
-  border: 2px dashed #f69c55;
-  align-content: center;
-  padding-left: 5em;
-  padding-right: 5em;
-  max-width: 400px;
-  margin: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding-bottom: 1.5em;
+    text-align: center;
+    border: 2px dashed #f69c55;
+    align-content: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-bottom: 1.5em;
 }
 
 #donation-home-guide p {
-  text-align: justify;
-  hyphens: auto;
+    text-align: justify;
+    hyphens: auto;
 }
 
 /* packages */
 
 #packages #donation-home {
-  text-align: center;
-  border: 2px dashed #f69c55;
-  align-content: center;
-  padding-left: 5em;
-  padding-right: 5em;
-  max-width: 400px;
-  margin: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding-bottom: 1.5em;
-}
-
-@media (min-width: 900px) and (min-height: 550px) {
-  #packages {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    min-width: 800px;
-  }
-
-  #packages #donation-home {
     text-align: center;
-    margin-left: 2em;
     border: 2px dashed #f69c55;
     align-content: center;
     padding-left: 5em;
     padding-right: 5em;
-  }
+    max-width: 400px;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-bottom: 1.5em;
+}
+
+@media (min-width: 900px) and (min-height: 550px) {
+    #packages {
+        display: flex;
+        min-width: 800px;
+        height: 100vh;
+    }
+
+    #packages #package-wrapper {
+        margin: auto;
+        overflow-y: scroll;
+        height: 80%;
+        max-width: 20em;
+        margin-right: 0;
+        scrollbar-width: none;
+
+        mask-image: linear-gradient(to bottom,
+                transparent,
+                black 5%,
+                black 10%,
+                black 90%,
+                black 95%,
+                transparent);
+
+        /* Safari */
+        -webkit-mask-image: linear-gradient(to bottom,
+                transparent,
+                black 5%,
+                black 10%,
+                black 90%,
+                black 95%,
+                transparent);
+    }
+
+    #packages #package-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    #packages #donation-home {
+        margin: auto;
+        text-align: center;
+        margin-left: 0;
+        border: 2px dashed #f69c55;
+        align-content: center;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
 }
 
 #packages #donation-home p {
-  text-align: justify;
-  hyphens: auto;
+    text-align: justify;
+    hyphens: auto;
 }
 
 #packages .title {
-  font-weight: 700;
-  font-size: xx-large;
+    font-weight: 700;
+    font-size: xx-large;
 }
 
 #packages .author {
-  font-weight: 500;
-  display: inline;
-  font-style: italic;
+    font-weight: 500;
+    display: inline;
+    font-style: italic;
 }
 
 #packages .date {
-  display: inline;
-  margin-left: 0.3em;
+    display: inline;
+    margin-left: 0.3em;
 }
 
 #packages .url {
-  display: inline;
-  text-decoration: underline;
+    display: inline;
+    text-decoration: underline;
 }
 
 #packages .package {
-  margin: 2em;
-  cursor: pointer;
+    margin: 2em;
+    cursor: pointer;
 }
 
 #packages #package-wrapper {
-  text-align: center;
+    text-align: center;
 }
 
 #packages .urlWrap {
-  transform: translateY(-11px);
+    transform: translateY(-11px);
 }
 
 #packages .download {
-  height: 1em;
-  display: inline;
-  padding: 8px;
-  transform: translateY(11px);
+    height: 1em;
+    display: inline;
+    padding: 8px;
+    transform: translateY(11px);
 }
 
 .light #packages .title {
-  color: #4c4f69;
+    color: #4c4f69;
 }
 
 .light #packages .author {
-  color: #5c5f77;
+    color: #5c5f77;
 }
 
 .light #packages .date {
-  color: #7c7f93;
+    color: #7c7f93;
 }
 
 .light #packages .url {
-  color: #1e66f5;
+    color: #1e66f5;
 }
 
 .dark #packages .title {
-  color: #cdd6f4;
+    color: #cdd6f4;
 }
 
 .dark #packages .author {
-  color: #bac2de;
+    color: #bac2de;
 }
 
 .dark #packages .date {
-  color: #7f849c;
+    color: #7f849c;
 }
 
 .dark #packages .url {
-  color: #89b4fa;
+    color: #89b4fa;
 }
 
 /* decks */
 #decks .subdecks li::marker {
-  content: "+";
+    content: "+";
 }
 
 #decks .subdecks .name {
-  margin-left: 0.3em;
-  margin-right: 3em;
+    margin-left: 0.3em;
+    margin-right: 3em;
 }
 
 #decks .subdecks .cards {
-  float: right;
-  width: 70px;
-  text-align: right;
-  background-color: inherit;
-  display: block;
+    float: right;
+    width: 70px;
+    text-align: right;
+    background-color: inherit;
+    display: block;
 }
 
 @media (max-width: 800px) {
-  #decks .subdecks .cards {
-    display: none;
-  }
+    #decks .subdecks .cards {
+        display: none;
+    }
 }
 
 #decks ul {
-  margin-bottom: 0.2em;
+    margin-bottom: 0.2em;
 }
 
 #decks {
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3em;
-  margin-bottom: 2em;
-  font-size: larger;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    font-size: larger;
 }
 
-#decks li:hover > .name {
-  text-decoration: underline;
+#decks li:hover>.name {
+    text-decoration: underline;
 }
 
 #decks li {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .light #decks {
-  color: #3c3f59;
+    color: #3c3f59;
 }
 
 .light #decks .subdecks li::marker {
-  color: #7c7f93;
+    color: #7c7f93;
 }
 
 .light #decks .cards {
-  color: #1e66f5;
+    color: #1e66f5;
 }
 
 .dark #decks {
-  color: #cdd6f4;
+    color: #cdd6f4;
 }
 
 .dark #decks .subdecks li::marker {
-  color: #a6adc8;
+    color: #a6adc8;
 }
 
 .dark #decks .cards {
-  color: #89b4fa;
+    color: #89b4fa;
 }
 
 /* single */
 #single {
-  text-align: center;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #single .qualifier {
-  display: block;
-  font-size: large;
+    display: block;
+    font-size: large;
 }
 
 #single .name {
-  display: block;
-  font-size: xx-large;
+    display: block;
+    font-size: xx-large;
 }
 
 #single .counter {
-  display: x-large;
-  margin-top: 3em;
+    display: x-large;
+    margin-top: 3em;
 }
 
 #single .buttons {
-  margin-top: 10em;
+    margin-top: 10em;
 }
 
 #single .buttons div {
-  font-size: larger;
-  margin: 0.5em;
-  padding: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  border-radius: 1.25em;
-  display: inline-block;
-  cursor: pointer;
+    font-size: larger;
+    margin: 0.5em;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 1.25em;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .light #single {
-  color: #3c3f59;
+    color: #3c3f59;
 }
 
 .dark #single {
-  color: #cdd6f4;
+    color: #cdd6f4;
 }
 
 .light #single .buttons div {
-  background-color: #eff1f5;
-  border: 1px solid #bcc0cc;
+    background-color: #eff1f5;
+    border: 1px solid #bcc0cc;
 }
 
 .dark #single .buttons div {
-  background-color: #1e1e2e;
-  border: 1px solid #45475a;
+    background-color: #1e1e2e;
+    border: 1px solid #45475a;
 }
 
 /* browse */
 #browse {
-  margin-top: 4em;
+    margin-top: 4em;
 }
 
 #browse th,
 #browse td {
-  max-width: calc(min(30em, 40vw));
-  padding: 1em;
-  border: 1px solid;
+    max-width: calc(min(30em, 40vw));
+    padding: 1em;
+    border: 1px solid;
 }
 
 #browse #load {
-  font-size: larger;
-  padding: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  border-radius: 1.25em;
-  cursor: pointer;
-  width: fit-content;
-  margin: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
+    font-size: larger;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 1.25em;
+    cursor: pointer;
+    width: fit-content;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #browse table {
-  border-collapse: collapse;
-  margin: auto;
-  overflow: hidden;
+    border-collapse: collapse;
+    margin: auto;
+    overflow: hidden;
 }
 
 #browse img,
 #browse video {
-  width: 100%;
+    width: 100%;
 }
 
 .light #browse {
-  color: #3c3f59;
+    color: #3c3f59;
 }
 
 .dark #browse {
-  color: #cdd6f4;
+    color: #cdd6f4;
 }
 
 .light #browse #load {
-  background-color: #eff1f5;
-  border: 1px solid #bcc0cc;
+    background-color: #eff1f5;
+    border: 1px solid #bcc0cc;
 }
 
 .dark #browse #load {
-  background-color: #1e1e2e;
-  border: 1px solid #45475a;
+    background-color: #1e1e2e;
+    border: 1px solid #45475a;
 }
 
 /* shuffle */
 #shuffle .collapse {
-  text-align: center;
+    text-align: center;
 }
 
 #shuffle .cardHolder:hover .card-buttons {
-  opacity: 1;
-  transition: 0.1s;
-  transform: translateY(0px);
+    opacity: 1;
+    transition: 0.1s;
+    transform: translateY(0px);
 }
 
 #shuffle .card-buttons {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: 0.1s;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.1s;
 }
 
 #shuffle .card-buttons {
-  border-radius: 15px;
-  padding-top: 8px;
-  padding-bottom: 2px;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: block;
-  float: right;
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
+    border-radius: 15px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+    float: right;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
 }
 
 #shuffle #deleteButton {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 #shuffle .card-buttons img {
-  height: 1em;
+    height: 1em;
 }
 
 #shuffle #settings,
 #shuffle #cardNumberWrapper {
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
 
 #shuffle .cardScreen {
-  text-align: center;
+    text-align: center;
 }
 
 #shuffle .generate {
-  font-size: larger;
-  padding: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  border-radius: 1.25em;
-  cursor: pointer;
-  width: fit-content;
-  margin: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
+    font-size: larger;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 1.25em;
+    cursor: pointer;
+    width: fit-content;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #shuffle .cardHolder {
-  position: relative;
-  padding: 1em;
-  min-height: 7em;
-  width: calc(min(30em, 80%));
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
-  font-size: x-large;
-  cursor: pointer;
+    position: relative;
+    padding: 1em;
+    min-height: 7em;
+    width: calc(min(30em, 80%));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    font-size: x-large;
+    cursor: pointer;
 }
 
 #shuffle .frontTag,
 #shuffle .backTag {
-  opacity: 0.5;
-  margin-bottom: 0.5em;
+    opacity: 0.5;
+    margin-bottom: 0.5em;
 }
 
 #shuffle #settings li {
-  margin: 0.2em;
-  font-size: large;
-  list-style-type: none;
+    margin: 0.2em;
+    font-size: large;
+    list-style-type: none;
 }
 
 #shuffle .name {
-  margin-left: 0.3em;
+    margin-left: 0.3em;
 }
 
 #shuffle .collapse {
-  font-size: large;
-  cursor: pointer;
+    font-size: large;
+    cursor: pointer;
 }
 
 #shuffle #cardNumberWrapper {
-  margin-top: 1em;
-  font-size: large;
+    margin-top: 1em;
+    font-size: large;
 }
 
 #shuffle .cardNumInput {
-  margin-left: 0.8em;
-  font-size: large;
-  border-radius: 1em;
-  -webkit-appearance: none;
-  -moz-appearance: textfield;
-  appearance: none;
-  padding: 0.3em;
-  padding-left: 0.8em;
-  outline: none;
-  width: 5em;
+    margin-left: 0.8em;
+    font-size: large;
+    border-radius: 1em;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+    padding: 0.3em;
+    padding-left: 0.8em;
+    outline: none;
+    width: 5em;
 }
 
 .light #shuffle {
-  color: #3c3f59;
+    color: #3c3f59;
 }
 
 .dark #shuffle {
-  color: #cdd6f4;
+    color: #cdd6f4;
 }
 
 .light #shuffle .card-buttons {
-  background-color: #eaebf0;
-  border: 1px solid #ccd0dc;
+    background-color: #eaebf0;
+    border: 1px solid #ccd0dc;
 }
 
 .light #shuffle .generate,
 .light #shuffle .cardNumInput {
-  background-color: #eff1f5;
-  border: 1px solid #bcc0cc;
+    background-color: #eff1f5;
+    border: 1px solid #bcc0cc;
 }
 
 .dark #shuffle .generate,
 .dark #shuffle .card-buttons,
 .dark #shuffle .cardNumInput {
-  background-color: #1e1e2e;
-  border: 1px solid #45475a;
+    background-color: #1e1e2e;
+    border: 1px solid #45475a;
 }
 
 .light #shuffle .cardHolder {
-  border: 1px solid #bcc0cc;
+    border: 1px solid #bcc0cc;
 }
 
 .dark #shuffle .cardHolder {
-  border: 1px solid #45475a;
+    border: 1px solid #45475a;
 }
