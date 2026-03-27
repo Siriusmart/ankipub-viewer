@@ -12,6 +12,10 @@
     color: #89b4fa;
 }
 
+.dark img {
+    filter: invert();
+}
+
 body {
     font-family: "Open Sans";
     user-select: none;
