@@ -9,6 +9,10 @@ body {
     margin-bottom: 0;
 }
 
+[hidden] {
+    display: none !important;
+}
+
 .copy {
     user-select: all;
 }
