@@ -30,3 +30,40 @@ function downloadDeck(name) {
     link.download = `${name}.apkg`;
     link.click();
 }
+
+async function addDownload() {
+    let url = new URL(window.location.href);
+    const params = new URLSearchParams(url.search);
+    let index = await fetchJSON("./packages.json");
+    let packageDownload = index[params.get("package")];
+
+    if (packageDownload === undefined || packageDownload.download === undefined) {
+        return;
+    }
+
+    let footer = document.getElementById("footer");
+    let a = document.createElement("a");
+    a.innerText = "Download";
+    a.href = packageDownload.download;
+    a.download = packageDownload.download;
+    let space = document.createTextNode("\u00A0");
+    footer.prepend(a, space);
+}
+
+function addTheme() {
+    let footer = document.getElementById("footer");
+    let a = document.createElement("a");
+    a.innerText = "Theme";
+    a.href = "./"
+    a.addEventListener("click", e => {
+        e.preventDefault();
+        const url = new URL(window.location.href);
+        if (url.pathname.endsWith("dark.html"))
+            url.pathname = ""
+        else
+            url.pathname = "dark.html"
+
+        window.location.href = url
+    });
+    footer.prepend(a);
+}

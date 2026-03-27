@@ -1,4 +1,6 @@
 async function decks() {
+    addDownload();
+
     const screen = document.getElementById("decks");
     screen.innerHTML = "";
     let url = new URL(window.location.href);

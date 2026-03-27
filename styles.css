@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+.light a {
+    color: #1e66f5;
+}
+
+.dark {
+    color: #cdd6f4;
+}
+
+.dark a {
+    color: #89b4fa;
+}
+
 body {
     font-family: "Open Sans";
     user-select: none;
@@ -40,10 +52,6 @@ body {
     padding: 3px;
     padding-left: 6px;
     padding-right: 6px;
-}
-
-#footer a {
-    color: blue;
 }
 
 .light #footer {

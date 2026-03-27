@@ -1,5 +1,7 @@
 window.onload = tick;
 
+addTheme();
+
 // screens:
 // packages
 // decks{package=id}

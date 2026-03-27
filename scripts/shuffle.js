@@ -1,4 +1,6 @@
 async function shuffle() {
+    addDownload();
+
     let renderQueue = [];
     let render = (item) => {
         renderQueue.push(item);

@@ -1,4 +1,6 @@
 async function browse() {
+    addDownload();
+
     let renderQueue = [];
     let render = (item) => {
         renderQueue.push(item);

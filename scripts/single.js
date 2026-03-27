@@ -1,4 +1,6 @@
 async function single() {
+    addDownload();
+
     const screen = document.getElementById("single");
     screen.innerHTML = "";
     let url = new URL(window.location.href);
